@@ -1,20 +1,48 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <!-- <ion-title>
+      Home
+    </ion-title> -->
+    <div class="img-wrapper">
+      <img class="responsive-img" src="../../assets/logo.png">
+    </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <!-- <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Home</ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header> -->
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+
+    <div 
+      class="select-option"
+      (click)="goTo('https://members.mdlive.com/247doctor/landing_home')">
+      <strong>New Member?</strong>
+      <p>Activate <a>Physician Service</a></p>
+    </div>
+
+    <div class="spacer"></div>
+    
+    <div 
+      class="select-option"
+      (click)="goTo('https://members.mdlive.com/247doctor/member_login')">
+      <strong>Need a Doctor's Appointment?</strong>
+      <p>Set up a <a>Doctor Visit</a></p>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div 
+      class="select-option"
+      (click)="goTo('https://www.emsmed.com/(S(hsvikz32idtucecffzvihx2u))/vendors/rxpricing.aspx?groupid=CAPTURERX')">
+      <strong>Looking for Medication?</strong>
+      <p>Look up prices and <a>Find a Pharmacy</a></p>
+    </div>
+    
+    <div class="spacer"></div>  
   </div>
 </ion-content>
