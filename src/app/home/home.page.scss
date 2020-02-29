@@ -31,6 +31,8 @@ ion-content ion-toolbar {
 }
 .img-wrapper {
   text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
 }
 .responsive-img {
   width: 80%;
@@ -45,6 +47,34 @@ ion-content ion-toolbar {
   border: 1px solid gray;
   border-radius: 8px;
   padding: 7px;
-  max-width: 85%;
+  width: 85%;
+  max-width: 700px;
   margin: 0 auto;
+}
+
+.footer {
+  background:
+  rgb(41, 47, 83);
+  color:
+  white;
+  height: 50px;
+  line-height: 50px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  font-size: small;
+
+  ion-icon {
+    margin-right: 7px;
+    font-size: 24px;
+    position: relative;
+    top: 7px
+  }
+}
+
+@media (max-width: 399px)  {
+  #container {
+    top: 55%;
+  }
 }
